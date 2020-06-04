@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
 	ofstream out_aac("hello.aac", ios::binary);
 	int format, sample_rate, channels, bits_per_sample;
 
-	void *wav = wav_read_open("song.wav");
+	void *wav = wav_read_open("song.pcm");
 	if (!wav) {
 		return 1;
 	}
